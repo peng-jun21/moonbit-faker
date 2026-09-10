@@ -6,6 +6,8 @@ import {
 }
 
 // Values
+pub fn csv(UInt, Int) -> String raise FakeError
+
 pub fn dataset(UInt, Int) -> Array[Profile] raise FakeError
 
 // Errors
