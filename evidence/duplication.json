@@ -1,0 +1,117 @@
+{
+  "date": "2026-09-10",
+  "registry": {
+    "topic": "faker",
+    "url": "https://mooncakes.io/api/v0/search?kw=faker&limit=30",
+    "results": [
+      {
+        "name": "mizchi/flaker",
+        "description": "flaker core computation engine",
+        "repository": "https://github.com/mizchi/flaker"
+      },
+      {
+        "name": "kokic/fakefetch",
+        "description": "A fake fastfetch clone: prints device info that is fully CLI-controlled, unrelated to the actual machine.",
+        "repository": "https://github.com/kokic/fakefetch"
+      },
+      {
+        "name": "howhere7/moonmail",
+        "description": "RFC-driven SMTP client and MIME message builder for MoonBit.",
+        "repository": "https://github.com/howhere7/moonmail"
+      },
+      {
+        "name": "Allianaab2m/aya",
+        "description": "A thin, type-safe SQL toolkit for MoonBit",
+        "repository": "https://github.com/Allianaab2m/aya-orm"
+      },
+      {
+        "name": "marianoguerra/slack",
+        "description": "Slack Web API client: typed requests for the core method families, a generic call for the rest, Block Kit, cursor pagination, rate-limit tiers and request-signature verification. No dependencies; runs on every backend.",
+        "repository": "https://github.com/marianoguerra/slack-mb"
+      },
+      {
+        "name": "nexacodes/email",
+        "description": "",
+        "repository": ""
+      },
+      {
+        "name": "bobzhang/workflow",
+        "description": "Engine-agnostic multi-agent workflow orchestration with journaled replay/resume",
+        "repository": "https://github.com/bobzhang/openseek"
+      },
+      {
+        "name": "hbYlj/moonldap",
+        "description": "RFC-driven LDAPv3 client library for MoonBit with a generic ASN.1 BER codec",
+        "repository": "https://github.com/hbYlj/moonldap"
+      },
+      {
+        "name": "xvyve123/moonflow",
+        "description": "A lightweight event bus and message abstraction layer for MoonBit.",
+        "repository": "https://github.com/xvyve123/2131"
+      },
+      {
+        "name": "mizchi/actrun",
+        "description": "MVP GitHub Actions-compatible push CI runner with bitflow lowering, native execution, and bit workspace materialization.",
+        "repository": "https://github.com/mizchi/actrun"
+      },
+      {
+        "name": "Nanaloveyuki/madk",
+        "description": "Transport-independent Android Open Accessory protocol support for MoonBit.",
+        "repository": "https://github.com/Nanaloveyuki/madk"
+      },
+      {
+        "name": "wzzc-dev/moui",
+        "description": "MoUI is a multi-platform MoonBit GUI framework",
+        "repository": "https://github.com/wzzc-dev/MoUI.git"
+      },
+      {
+        "name": "Lfan-ke/moonorm",
+        "description": "moonorm — an ORM / SQL toolkit for MoonBit (← SQLAlchemy / SQLModel): a parameterized, injection-safe query builder (select / insert / update / delete).",
+        "repository": "https://github.com/Lfan-ke/moonorm"
+      },
+      {
+        "name": "bikallem/freetype",
+        "description": "Pure MoonBit FreeType-compatible font engine",
+        "repository": "https://github.com/bikallem/freetype"
+      },
+      {
+        "name": "marianoguerra/atproto",
+        "description": "AT Protocol (Bluesky) client: typed Lexicon records and responses, the atproto data model, XRPC, app-password sessions, and validators for DID, handle, NSID, AT-URI, TID and record keys. No dependencies; runs on every backend.",
+        "repository": "https://github.com/marianoguerra/atproto-mb"
+      },
+      {
+        "name": "Lfan-ke/moonkoog",
+        "description": "moonkoog — a MoonBit port of JetBrains Koog (1.1.1): a type-safe agent-orchestration framework. The prompt/message model, LLM client contract, tool registry with a JSON-schema descriptor model, and the AIAgent tool-calling loop (Koog's singleRunStrategy), built to compose with the moon-heke full-stack suite.",
+        "repository": "https://github.com/Lfan-ke/moonkoog"
+      },
+      {
+        "name": "nexacodes/moontask",
+        "description": "A MoonBit task queue library with producer, consumer, admin APIs, and memory/redis backends.",
+        "repository": "https://github.com/nexacodes/moontask"
+      },
+      {
+        "name": "marianoguerra/megalodon",
+        "description": "A portable Mastodon-compatible Fediverse API client for MoonBit.",
+        "repository": "https://github.com/marianoguerra/megalodon-md"
+      },
+      {
+        "name": "totto2727/moon-agent-graph",
+        "description": "Native asynchronous agent graph runtime with Mermaid visualization",
+        "repository": "https://github.com/totto2727-org/monorepo"
+      },
+      {
+        "name": "vectie/lunanexa",
+        "description": "MoonBit-native model-as-a-service and cluster control plane",
+        "repository": "https://github.com/vectie/lunanexa"
+      }
+    ]
+  },
+  "github": {
+    "topic": "faker",
+    "query": "faker language:MoonBit",
+    "url": "https://api.github.com/search/repositories?q=faker+language%3AMoonBit&per_page=30",
+    "total_count": 0,
+    "results": []
+  },
+  "scope": "keyword package metadata + public repository search; not full code, private repos, or contest registration list"
+}

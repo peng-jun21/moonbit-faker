@@ -1,0 +1,12 @@
+import {
+  "localreview/faker" @lib,
+  "moonbitlang/core/string" @strconv,
+}
+
+supported_targets = "js"
+
+pkgtype(kind: "executable")
+
+options(
+  link: { "js": { "exports": [ "run" ], "format": "esm" } },
+)

@@ -1,0 +1,1 @@
+export default {"slug": "faker", "title": "中文 Faker", "scope": "可复现姓名/地址/日期/标识符与样本数据集", "source": "https://faker.readthedocs.io/en/master/locales/zh_CN.html", "limitations": "小型原创中文样本词表；使用确定性 PRNG，非加密随机；姓名可能与真人相同，地址标记为测试地址，邮箱使用 example.test；不含完整 Faker 词库或真实证件号。", "recommendation": "保留候选：先补边界和上游兼容范围，再决定是否申报。", "version": "0.1.0", "example": "20260910 5"};

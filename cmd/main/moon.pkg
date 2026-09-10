@@ -1,0 +1,6 @@
+import {
+  "localreview/faker" @lib,
+  "moonbitlang/core/string" @strconv,
+}
+
+pkgtype(kind: "executable")

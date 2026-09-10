@@ -1,0 +1,36 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "localreview/faker"
+
+import {
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub fn dataset(UInt, Int) -> Array[Profile] raise FakeError
+
+// Errors
+pub suberror FakeError {
+  Invalid(String)
+} derive(@debug.Debug)
+
+// Types and methods
+pub struct Generator {
+  mut state : UInt
+} derive(@debug.Debug)
+pub fn Generator::date(Self, Int, Int) -> String raise FakeError
+pub fn Generator::integer(Self, Int, Int) -> Int raise FakeError
+pub fn Generator::name(Self) -> String
+pub fn Generator::new(UInt) -> Self
+pub fn Generator::profile(Self, Int) -> Profile raise FakeError
+
+pub(all) struct Profile {
+  name : String
+  email : String
+  address : String
+  birth_date : String
+  id : String
+} derive(Eq, @debug.Debug)
+
+// Type aliases
+
+// Traits

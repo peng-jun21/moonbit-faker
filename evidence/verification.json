@@ -1,0 +1,49 @@
+{
+  "project": "faker",
+  "checks": [
+    {
+      "command": "moon fmt",
+      "exit_code": 0,
+      "output": "Finished. moon: ran 8 tasks, now up to date\n",
+      "utc": "2026-09-10T06:01:15.101133+00:00"
+    },
+    {
+      "command": "moon info",
+      "exit_code": 0,
+      "output": "Finished. moon: ran 2 tasks, now up to date\n",
+      "utc": "2026-09-10T06:01:15.513916+00:00"
+    },
+    {
+      "command": "moon check --deny-warn",
+      "exit_code": 0,
+      "output": "Finished. moon: ran 2 tasks, now up to date\n",
+      "utc": "2026-09-10T06:01:16.985913+00:00"
+    },
+    {
+      "command": "moon test --target wasm-gc --deny-warn",
+      "exit_code": 0,
+      "output": "Total tests: 7, passed: 7, failed: 0.\n",
+      "utc": "2026-09-10T06:01:17.534907+00:00"
+    },
+    {
+      "command": "moon test --target js --deny-warn",
+      "exit_code": 0,
+      "output": "Total tests: 7, passed: 7, failed: 0.\n",
+      "utc": "2026-09-10T06:01:18.340809+00:00"
+    },
+    {
+      "command": "moon build --target js --deny-warn",
+      "exit_code": 0,
+      "output": "Finished. moon: no work to do\n",
+      "utc": "2026-09-10T06:01:19.323244+00:00"
+    },
+    {
+      "command": "moon run cmd/main",
+      "exit_code": 0,
+      "output": "[\n  {\n    name: \"郑文静\",\n    email: \"sample0@example.test\",\n    address: \"测试省示例市东城区星河路861号\",\n    birth_date: \"1991-02-24\",\n    id: \"sample-0-343334807\",\n  },\n  {\n    name: \"许清和\",\n    email: \"sample1@example.test\",\n    address: \"测试省样本市新区样本大道287号\",\n    birth_date: \"1971-05-26\",\n    id: \"sample-1-2729964652\",\n  },\n  {\n    name: \"赵若云\",\n    email: \"sample2@example.test\",\n    address: \"测试省示例市东城区星河路628号\",\n    birth_date: \"1975-02-12\",\n    id: \"sample-2-3436932642\",\n  },\n  {\n    name: \"吴清和\",\n    email: \"sample3@example.test\",\n    address: \"测试省示例市西城区青山路860号\",\n    birth_date: \"2005-06-02\",\n    id: \"sample-3-3022741740\",\n  },\n  {\n    name: \"陈思远\",\n    email: \"sample4@example.test\",\n    address: \"测试省样本市新区明月街541号\",\n    birth_date: \"1994-05-27\",\n    id: \"sample-4-1296938617\",\n  },\n]\n",
+      "utc": "2026-09-10T06:01:19.971929+00:00"
+    }
+  ],
+  "demo": "[\n  {\n    name: \"郑文静\",\n    email: \"sample0@example.test\",\n    address: \"测试省示例市东城区星河路861号\",\n    birth_date: \"1991-02-24\",\n    id: \"sample-0-343334807\",\n  },\n  {\n    name: \"许清和\",\n    email: \"sample1@example.test\",\n    address: \"测试省样本市新区样本大道287号\",\n    birth_date: \"1971-05-26\",\n    id: \"sample-1-2729964652\",\n  },\n  {\n    name: \"赵若云\",\n    email: \"sample2@example.test\",\n    address: \"测试省示例市东城区星河路628号\",\n    birth_date: \"1975-02-12\",\n    id: \"sample-2-3436932642\",\n  },\n  {\n    name: \"吴清和\",\n    email: \"sample3@example.test\",\n    address: \"测试省示例市西城区青山路860号\",\n    birth_date: \"2005-06-02\",\n    id: \"sample-3-3022741740\",\n  },\n  {\n    name: \"陈思远\",\n    email: \"sample4@example.test\",\n    address: \"测试省样本市新区明月街541号\",\n    birth_date: \"1994-05-27\",\n    id: \"sample-4-1296938617\",\n  },\n]",
+  "source_lines": 193
+}
