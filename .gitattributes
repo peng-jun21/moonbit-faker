@@ -2,3 +2,4 @@
 *.png -text
 *.jpg -text
 *.wasm -text
+*.csv -text whitespace=cr-at-eol

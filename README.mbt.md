@@ -13,4 +13,4 @@ test "CSV is deterministic has header and CRLF" {
 }
 ```
 
-限制：词库和 provider 规模远小于 Faker；不声称身份号码真实或可用。
+0.3 新增可配置记录、25 类 provider 和 JSON/JSONL/CSV；词库与地区覆盖仍小，完整边界见 FEATURES.md。

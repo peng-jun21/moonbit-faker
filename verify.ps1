@@ -30,6 +30,8 @@ try {
   if ($LASTEXITCODE -ne 0) {throw 'browser engine test failed'}
   node tools/test-cli.mjs
   if ($LASTEXITCODE -ne 0) {throw 'CLI test failed'}
+  node tools/test-records.mjs
+  if ($LASTEXITCODE -ne 0) {throw 'record generation failed'}
   node tools/robustness.mjs
   if ($LASTEXITCODE -ne 0) {throw 'robustness failed'}
   node tools/benchmark.mjs

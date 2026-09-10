@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-10T17:01:28.0882204Z",
+  "version": "0.3.0",
+  "javascriptTests": 16,
+  "newWasmGcTests": 8,
+  "providerVariants": 25,
+  "independentRows": 256,
+  "independentColumns": 26,
+  "formats": 3,
+  "invalidConfigurations": 10,
+  "archivesRebuilt": false,
+  "sourceSha256": {
+    "tools/cli.mjs": "5c773a006b8f253bce054c8ef113866c89f4dc3a8a45806f83734c8af306f878",
+    "random_tools.mbt": "3aceb7229aa5a81b29f9f712fb33fe91d1bb18a9e33f72d31c708db66fcddd00",
+    "generator.mbt": "209f2145dd45911914346380aa30b220f5199044e3172b8416298fabfbe4e41e",
+    "date_range.mbt": "9d84c3d8cb54f28f823447d8622cc7f4a00b1ae46b2a6f8f3a6589c8cfa831ae",
+    "web/engine.mjs": "8d452828656797751f1bb816fdfa4872b838dce515924d42cefffda86b0d20f8",
+    "request.mbt": "8d3cf36670519ced051245be07eda01db4cf53e4a608f96569e6dc64561b63b2",
+    "schema.mbt": "f2757117464d139ab7283a5613bb156e5afcb4ac597adc3ffe0a06f0320ba515",
+    "providers.mbt": "9d49ae71c772727e46b9416db30be3f2e5c89e545170565ba8a9e1ded5626d83"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-10T16:56:35.279Z",
+  "node": "v24.11.0",
+  "platform": "win32",
+  "arch": "x64",
+  "rows": 10000,
+  "columns": 6,
+  "milliseconds": 215,
+  "utf8Bytes": 1555382,
+  "outputSha256": "2efc55e3953085cd855360f29cd2075bc9c16df2ee4bd145ed76026773267ef7",
+  "engineSha256": "8d452828656797751f1bb816fdfa4872b838dce515924d42cefffda86b0d20f8",
+  "scope": "One local cold measurement including request decoding, generation and JSON rendering. No throughput or memory guarantee."
+}

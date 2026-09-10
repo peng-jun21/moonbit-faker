@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-10T16:53:42.868729+00:00",
+  "python": "3.14.4",
+  "rows": 256,
+  "columns": 26,
+  "passed": true,
+  "validators": [
+    "uuid",
+    "ipaddress",
+    "datetime",
+    "decimal",
+    "csv",
+    "json",
+    "urllib.parse",
+    "re",
+    "GS1 modulo-10 invariant"
+  ],
+  "sha256": {
+    "records.json": "a6cf380aa5039098e940a25faa76aed8d4ccba96db189ca4a270429874a1963b",
+    "records.jsonl": "8a3e6b88b4da458fc395c3aa8365f47c5e0cd924ac313420bcdfe4e5a78734a6",
+    "records.csv": "27b7d5ab25f68540e0bf319b831e2d7f64afe0687aa297b49ceb89b6b11780b1",
+    "records-schema.json": "79b869ef7ee5ccce4ab6ec0e16d631ef2bdd73c1d7fd0dfa733bc9db79820011"
+  },
+  "scope": "Format and deterministic dataset validation; no Python Faker sequence, locale-corpus, distribution or identifier-allocation parity claim."
+}

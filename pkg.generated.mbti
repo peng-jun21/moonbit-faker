@@ -10,20 +10,60 @@ pub fn csv(UInt, Int) -> String raise FakeError
 
 pub fn dataset(UInt, Int) -> Array[Profile] raise FakeError
 
+pub fn ean13_from_body(String) -> String raise FakeError
+
+pub fn generate_request(String) -> String raise FakeError
+
+pub fn records(UInt, Array[Column], Int) -> Array[Json] raise FakeError
+
+pub fn render_records(Array[Column], Array[Json], String) -> String raise FakeError
+
 // Errors
 pub suberror FakeError {
   Invalid(String)
 } derive(@debug.Debug)
 
 // Types and methods
+pub(all) struct Column {
+  name : String
+  provider : Provider
+  unique : Bool
+  null_percent : Int
+} derive(Eq, @debug.Debug)
+pub fn Column::new(String, Provider, unique? : Bool, null_percent? : Int) -> Self
+
 pub struct Generator {
   mut state : UInt
 } derive(@debug.Debug)
+pub fn Generator::boolean(Self, percent? : Int) -> Bool raise FakeError
+pub fn Generator::bothify(Self, String) -> String raise FakeError
+pub fn[T] Generator::choose(Self, Array[T]) -> T raise FakeError
+pub fn Generator::company(Self) -> String
 pub fn Generator::date(Self, Int, Int) -> String raise FakeError
+pub fn Generator::date_between(Self, String, String) -> String raise FakeError
+pub fn Generator::decimal(Self, Int, Int, Int) -> String raise FakeError
+pub fn Generator::ean13(Self) -> String raise FakeError
+pub fn Generator::email(Self) -> String raise FakeError
+pub fn Generator::hex_color(Self) -> String raise FakeError
 pub fn Generator::integer(Self, Int, Int) -> Int raise FakeError
+pub fn Generator::ipv4(Self) -> String raise FakeError
+pub fn Generator::ipv6(Self) -> String raise FakeError
+pub fn Generator::isbn13(Self) -> String raise FakeError
+pub fn Generator::job(Self) -> String
+pub fn Generator::mac_address(Self) -> String raise FakeError
 pub fn Generator::name(Self) -> String
 pub fn Generator::new(UInt) -> Self
 pub fn Generator::profile(Self, Int) -> Profile raise FakeError
+pub fn Generator::restore(Self, UInt) -> Unit raise FakeError
+pub fn[T] Generator::sample(Self, Array[T], Int) -> Array[T] raise FakeError
+pub fn Generator::sentence(Self, words? : Int) -> String raise FakeError
+pub fn Generator::snapshot(Self) -> UInt
+pub fn Generator::url(Self) -> String raise FakeError
+pub fn Generator::username(Self) -> String raise FakeError
+pub fn Generator::uuid4(Self) -> String raise FakeError
+pub fn Generator::value(Self, Provider, index? : Int) -> Json raise FakeError
+pub fn Generator::weighted_index(Self, Array[Int]) -> Int raise FakeError
+pub fn Generator::word(Self) -> String
 
 pub(all) struct Profile {
   name : String
@@ -31,6 +71,34 @@ pub(all) struct Profile {
   address : String
   birth_date : String
   id : String
+} derive(Eq, @debug.Debug)
+
+pub(all) enum Provider {
+  Name
+  Address
+  Email
+  Username
+  Url
+  Uuid4
+  Ipv4
+  Ipv6
+  MacAddress
+  HexColor
+  Company
+  Job
+  Word
+  Sentence(Int)
+  Boolean(Int)
+  Integer(Int, Int)
+  Decimal(Int, Int, Int)
+  DateBetween(String, String)
+  Ean13
+  Isbn13
+  Template(String)
+  Choice(Array[String])
+  WeightedChoice(Array[String], Array[Int])
+  Constant(Json)
+  Sequence(Int, Int)
 } derive(Eq, @debug.Debug)
 
 // Type aliases

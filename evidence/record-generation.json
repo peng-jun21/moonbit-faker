@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-10T16:55:27.619Z",
+  "node": "v24.11.0",
+  "rows": 256,
+  "columns": 26,
+  "formats": 3,
+  "rejectedCases": 10,
+  "schemaFileCli": true,
+  "emptyJsonlCli": true,
+  "engineSha256": "8d452828656797751f1bb816fdfa4872b838dce515924d42cefffda86b0d20f8"
+}

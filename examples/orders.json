@@ -1,0 +1,41 @@
+{
+  "seed": 42,
+  "count": 5,
+  "columns": [
+    {
+      "name": "id",
+      "provider": "sequence",
+      "start": 1
+    },
+    {
+      "name": "customer",
+      "provider": "name"
+    },
+    {
+      "name": "price",
+      "provider": "decimal",
+      "min": 500,
+      "max": 12000,
+      "places": 2
+    },
+    {
+      "name": "status",
+      "provider": "weighted_choice",
+      "values": [
+        "new",
+        "shipped",
+        "cancelled"
+      ],
+      "weights": [
+        5,
+        4,
+        1
+      ]
+    },
+    {
+      "name": "reference",
+      "provider": "uuid4",
+      "unique": true
+    }
+  ]
+}

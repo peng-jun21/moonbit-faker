@@ -15,6 +15,6 @@ try {
  if(input===undefined){let size=0;const chunks=[];for await(const chunk of process.stdin){size+=chunk.length;if(size>2097152)throw new Error('Input exceeds 2 MiB');chunks.push(chunk)}input=Buffer.concat(chunks).toString('utf8')}
  if(Buffer.byteLength(input)>2097152)throw new Error('Input exceeds 2 MiB');
  const output=run(input),ok=!output.startsWith('ERROR:');
- process.stdout.write(json?JSON.stringify({ok,output})+'\n':output+(output.endsWith('\n')?'':'\n'));
+ process.stdout.write(json?JSON.stringify({ok,output})+'\n':output+(!output||output.endsWith('\n')?'':'\n'));
  process.exitCode=ok?0:2;
 }catch(e){process.stderr.write(JSON.stringify({ok:false,error:String(e.message||e)})+'\n');process.exitCode=1}

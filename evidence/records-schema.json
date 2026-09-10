@@ -1,0 +1,142 @@
+{
+  "seed": 20260911,
+  "count": 256,
+  "columns": [
+    {
+      "name": "id",
+      "provider": "sequence",
+      "start": 1000,
+      "step": 2,
+      "unique": true
+    },
+    {
+      "name": "name",
+      "provider": "name"
+    },
+    {
+      "name": "address",
+      "provider": "address"
+    },
+    {
+      "name": "email",
+      "provider": "email"
+    },
+    {
+      "name": "username",
+      "provider": "username"
+    },
+    {
+      "name": "url",
+      "provider": "url"
+    },
+    {
+      "name": "uuid",
+      "provider": "uuid4",
+      "unique": true
+    },
+    {
+      "name": "ipv4",
+      "provider": "ipv4"
+    },
+    {
+      "name": "ipv6",
+      "provider": "ipv6"
+    },
+    {
+      "name": "mac",
+      "provider": "mac"
+    },
+    {
+      "name": "color",
+      "provider": "color"
+    },
+    {
+      "name": "company",
+      "provider": "company"
+    },
+    {
+      "name": "job",
+      "provider": "job"
+    },
+    {
+      "name": "word",
+      "provider": "word"
+    },
+    {
+      "name": "sentence",
+      "provider": "sentence",
+      "words": 3
+    },
+    {
+      "name": "active",
+      "provider": "boolean",
+      "percent": 37
+    },
+    {
+      "name": "quantity",
+      "provider": "integer",
+      "min": 1,
+      "max": 9
+    },
+    {
+      "name": "price",
+      "provider": "decimal",
+      "min": -12500,
+      "max": 30000,
+      "places": 2
+    },
+    {
+      "name": "date",
+      "provider": "date",
+      "first": "2024-02-28",
+      "last": "2024-03-02"
+    },
+    {
+      "name": "ean",
+      "provider": "ean13"
+    },
+    {
+      "name": "isbn",
+      "provider": "isbn13"
+    },
+    {
+      "name": "code",
+      "provider": "template",
+      "template": "SKU-??-####"
+    },
+    {
+      "name": "category",
+      "provider": "choice",
+      "values": [
+        "A",
+        "B,quoted",
+        "C\nline"
+      ]
+    },
+    {
+      "name": "status",
+      "provider": "weighted_choice",
+      "values": [
+        "unused",
+        "active",
+        "archived"
+      ],
+      "weights": [
+        0,
+        3,
+        1
+      ]
+    },
+    {
+      "name": "note",
+      "provider": "constant",
+      "value": "a,\"b\"\r\nc"
+    },
+    {
+      "name": "optional",
+      "provider": "constant",
+      "value": "optional",
+      "null_percent": 25
+    }
+  ]
+}
