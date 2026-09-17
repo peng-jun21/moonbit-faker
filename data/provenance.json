@@ -1,0 +1,95 @@
+{
+  "version": "40.39.0",
+  "wheel": {
+    "version": "40.39.0",
+    "url": "https://files.pythonhosted.org/packages/45/c8/901282279841ebb59216433be01aac825fb905e1a597de3b7b5ab8b0c43e/faker-40.39.0-py3-none-any.whl",
+    "filename": "faker-40.39.0-py3-none-any.whl",
+    "sha256": "c4c7ec2cddfaf602c5a8a2c960614946aa8c161250bd9d49a8846cd24d1ef028",
+    "licenseFiles": [
+      "faker-40.39.0.dist-info/licenses/LICENSE.txt"
+    ],
+    "requires": [
+      "tzdata; platform_system == \"Windows\"",
+      "tzdata; extra == \"tzdata\"",
+      "pillow; extra == \"image\""
+    ]
+  },
+  "sourceSHA256": {
+    "providers/person/en_US/__init__.py": "6f8e0ea280dd8875f06c804c1855c7da01df8db04d51f16be1877aa11c3bfe58",
+    "providers/person/__init__.py": "345fd751f2f6939870362b45bf5c2d3bfdb7e94b024953898a1d5781a53a4eea",
+    "providers/__init__.py": "45ed9d64102e702a663d0a32eb33a366a691e5630cb3fc1c4a90f1cab2244199",
+    "providers/job/en_US/__init__.py": "7b347419c0eb7100a539825ade44a0e7a2fad309a6e54781cd4f767be6829e28",
+    "providers/job/__init__.py": "88943fdcd86a5290b1f3534893c475e808b43f3e52dc12ea6b6dfaa099b41aae",
+    "providers/lorem/en_US/__init__.py": "178c34c56447ec5aea652228593a13c9d9b4e27c6138c814ca62f1ef4a2cf277",
+    "providers/lorem/__init__.py": "3849092bb7d7e9417d3904b8a9aa2b2144bb1f92618d9c2b8a38ab6ab0a48e84",
+    "providers/address/en_US/__init__.py": "e428c37795535b446e2d48c1503917d3e80297abcb8ca3bf16b8f459950e8bcc",
+    "providers/address/en/__init__.py": "c386cc5967bf092a7098143243c478a0785d64adff2acd6611477d8ec7f18a07",
+    "providers/address/__init__.py": "c0fdfb3f713bce6bbc5b42d65e4e9c6e4d3b404e8ec36adf7c9ef9714c89ee28",
+    "providers/company/en_US/__init__.py": "f226a3b35c5e24edf503810891989f35c0c5ca0f4c6f006f9c0e9259e63d2287",
+    "providers/company/__init__.py": "897c6cb1e61584d2f2761fe859bc5b54d46c0ea2d8835ec18ec6f29db94b53ca",
+    "providers/color/en_US/__init__.py": "cb5782b46c7a7fb2f6d8b9100fd73c50645e1037e983711e4571b1e99ac375e6",
+    "providers/color/__init__.py": "4c0f4c25af8b6d0daed63805e669298c208af5287e705c3b0bedf42014d01e74",
+    "providers/phone_number/en_US/__init__.py": "39d0043ec89cae86eed18f169a3f55a4f2b9a38eb956ef4bb217389cd80506e6",
+    "providers/phone_number/__init__.py": "efe8d0567274f62eb9063c913e70be5b5f2db488cb49f34b313c5aef89c4e179",
+    "providers/person/zh_CN/__init__.py": "c27bc139ec31885a485d5d2e1cb1d36e4df3a4a0341f1d0fe28898edb6a4865a",
+    "providers/job/zh_CN/__init__.py": "cddd669b5614219ddd197668f91bb39c8919aefe4240b3ce3d1bb3757070e090",
+    "providers/lorem/zh_CN/__init__.py": "c6cc02d8d20a7b93cf5e31cc47193e06afec108637192fe2a8c6706cd36e24cc",
+    "providers/address/zh_CN/__init__.py": "31a5b7a937c8871a07d0940d6986262bd0fe928c4acbc4457d38b1d00fa49c61",
+    "providers/company/zh_CN/__init__.py": "268c76baecc38e8c31a8ef4c5fb2450cfe6270faa9eaa9c2cdada7db1810bd3a",
+    "providers/phone_number/zh_CN/__init__.py": "dd2be3dd94a55c8172edf40bb9781ebc8a509a596df10473209b6499f27e5706",
+    "providers/person/en_GB/__init__.py": "bf9f2e9160c0a7aa6981d39e8c56aec3a1ac262431b3e95d619a21bb0d62aabe",
+    "providers/lorem/la/__init__.py": "43a176b52b91f28c77d79142a33b645bf9238394f5eb23f8f5657eea1a89c124",
+    "providers/address/en_GB/__init__.py": "d93c3e4f452c215bd5762129fd40f59ed3f09d0e4d14d09688e85125cd1488dd",
+    "providers/phone_number/en_GB/__init__.py": "e955f9bef2364475b46350bfa620924d5ea599f7dbadfb557688f8e05840c900",
+    "providers/person/de_DE/__init__.py": "42e20fb0daf2ccd4210fedfc94cb6274410cc2e04a8021f5f53ad178b24ed602",
+    "providers/job/de_DE/__init__.py": "2c79a38cba57a0ed374a8b96235900976408e4365e41e0dae34ebf1734a6bc10",
+    "providers/lorem/de_DE/__init__.py": "eabaa11cf445de01a1b376a013f35c3d7a7232bff3ee0b29f25ba0f7c91c8815",
+    "providers/address/de_DE/__init__.py": "bb85f0865a1ecb7adb760f99de30d538f9af2e2ce08f1f0e13d5d5efbefe499f",
+    "providers/address/de/__init__.py": "e50ba4d489f644d968bec5816f79e9ca70858a8e1b911d48cdb35185920deee5",
+    "providers/company/de_DE/__init__.py": "299d192c0f1fd8ee8edf9d4402b77f2415acc99271a6c3f5f9d6cb553b074daf",
+    "providers/color/de_DE/__init__.py": "163dd48a4fbbbbb03a22fb3565b9726687559ef974fd15f9e38d9117eca17a36",
+    "providers/color/de/__init__.py": "cb6fee2a3cf4cc4f7b468cad90455b5aa61aaccd98d1eaff6c8d4f4826767365",
+    "providers/phone_number/de_DE/__init__.py": "19bd2b2734ce217f8aba824601d54bbd6248c6e2a222e21c3694d4087732c4ed",
+    "providers/person/fr_FR/__init__.py": "157a646f0d6b68eae1a785c9bb9b2e225e1af4854f96c7281264bacf2876bee7",
+    "providers/job/fr_FR/__init__.py": "b8f0a0b72ecc063dc1f9f94c4f48d685b93176d0a12348f35617e0378caa1d80",
+    "providers/lorem/fr_FR/__init__.py": "76cc565069e59cf3bb71c6e58e4e67a44d5b17e5dc1510b66bf5fb81abd0fd69",
+    "providers/address/fr_FR/__init__.py": "4be0b58056db11d465d45338a833b4a6b0810030b4a763c9316976cbde2cc28b",
+    "providers/company/fr_FR/__init__.py": "2a140199bee36b95b8566bd5ec99eb1a1fb59709d60c3f3bde5895b42b9b4e68",
+    "providers/color/fr_FR/__init__.py": "0f00bd31a51734f478de2110ecd64288e44484a57575da1f039f327a8f431a68",
+    "providers/phone_number/fr_FR/__init__.py": "42d1d707263bd5d96f3d33300ede7e8acb1e07bf7ecb5549303c5d3d9045454f",
+    "providers/person/ja_JP/__init__.py": "03bce3b7041dd0c214420881269741f7165680938e4b9fddfab836b4c2493fdf",
+    "providers/job/ja_JP/__init__.py": "60a47aeb1df50d585c4dbbf4a4f4f50521461fa96ba679e2a49483b63986dc99",
+    "providers/lorem/ja_JP/__init__.py": "935948697c4727fbcf5fcbcc825bfaaf961d030323a4b52ce7f3cf5badc28061",
+    "providers/address/ja_JP/__init__.py": "a20ef73533f57266e779d87d006a23782dcfe1489df629e92ce3c8097cbc5dc6",
+    "providers/company/ja_JP/__init__.py": "4ac548568d733d2c964dff208c964b5c7909f6d4a31ee2efc5fe8d85305ceece",
+    "providers/phone_number/ja_JP/__init__.py": "9acb8b8e06c3ff21334e0fb680990dbed01e18fb2c5e01e13e349716ffb11946"
+  },
+  "dataSHA256": "ea681fda79fcd3a9102f6f9042c1fffd81a0b627b9afee5b41a93359d30a7181",
+  "locales": {
+    "en_US": {
+      "methods": 39,
+      "entries": 7056
+    },
+    "zh_CN": {
+      "methods": 35,
+      "entries": 3701
+    },
+    "en_GB": {
+      "methods": 42,
+      "entries": 4478
+    },
+    "de_DE": {
+      "methods": 35,
+      "entries": 6881
+    },
+    "fr_FR": {
+      "methods": 35,
+      "entries": 5170
+    },
+    "ja_JP": {
+      "methods": 39,
+      "entries": 1561
+    }
+  },
+  "scope": "Explicit provider data and template conventions. Fallback modules match Faker provider resolution. No complete locale/API claim."
+}

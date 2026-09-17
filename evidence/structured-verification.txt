@@ -1,0 +1,51 @@
+Finished. moon: ran 13 tasks, now up to date
+Finished. moon: ran 3 tasks, now up to date
+Finished. moon: ran 4 tasks, now up to date
+Total tests: 22, passed: 22, failed: 0.
+Total tests: 22, passed: 22, failed: 0.
+Finished. moon: ran 5 tasks, now up to date
+[
+  {
+    name: "郑文静",
+    email: "sample0@example.test",
+    address: "测试省示例市东城区星河路861号",
+    birth_date: "1991-02-24",
+    id: "sample-0-343334807",
+  },
+  {
+    name: "许清和",
+    email: "sample1@example.test",
+    address: "测试省样本市新区样本大道287号",
+    birth_date: "1971-05-26",
+    id: "sample-1-2729964652",
+  },
+  {
+    name: "赵若云",
+    email: "sample2@example.test",
+    address: "测试省示例市东城区星河路628号",
+    birth_date: "1975-02-12",
+    id: "sample-2-3436932642",
+  },
+  {
+    name: "吴清和",
+    email: "sample3@example.test",
+    address: "测试省示例市西城区青山路860号",
+    birth_date: "2005-06-02",
+    id: "sample-3-3022741740",
+  },
+  {
+    name: "陈思远",
+    email: "sample4@example.test",
+    address: "测试省样本市新区明月街541号",
+    birth_date: "1994-05-27",
+    id: "sample-4-1296938617",
+  },
+]
+faker: independent browser engine passed
+faker: CLI input/file/stdin/error/exit-status checks passed
+{"date":"2026-09-17T16:39:23.622Z","node":"v24.11.0","rows":256,"columns":26,"formats":3,"rejectedCases":10,"schemaFileCli":true,"emptyJsonlCli":true,"engineSha256":"e4cd2acae9c3709b51855524b9124bf03027e0bd756a571b24b1de503b82a82c"}
+{"rows": 256, "columns": 26, "passed": true}
+{"referenceCases":651,"localeMethods":217,"values":5208,"passed":true}
+{"passed":9,"largeStream":{"rows":100000,"bytes":5006048,"sha256":"9e6e6894ed0685dd06ea7ff471a2996f8f1d59075822bdab686b54d828d7fe98","elapsedMs":1593.3851999999997,"sampledProcessPeakRssBytes":147927040,"runtime":"v24.11.0","cpu":"Intel(R) Core(TM) i7-14700HX","scope":"Worker, JSON, validation and checkpoint; host RSS samples include worker heap; no exact peak or upstream throughput claim"}}
+faker: 307 bounded inputs, no uncaught runtime failure
+{"project":"faker","utc":"2026-09-17T16:39:29.717Z","runtime":"v24.11.0","platform":"win32","cpu":"Intel(R) Core(TM) i7-14700HX","input_utf8_bytes":10,"samples":30,"warmup":5,"median_ms":0.1728000000000094,"p95_ms":0.39629999999999654,"max_ms":1.3506,"scope":"JS warm execution of documented example; no cross-project or upstream performance claim"}

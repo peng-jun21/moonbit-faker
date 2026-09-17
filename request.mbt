@@ -70,6 +70,7 @@ fn parse_column(value : Json) -> Column raise FakeError {
   let name = text_option(fields, "name", "")
   let kind = text_option(fields, "provider", "")
   let extra = match kind {
+    "localized" => ["locale", "method"]
     "integer" => ["min", "max"]
     "decimal" => ["min", "max", "places"]
     "date" => ["first", "last"]
@@ -88,6 +89,11 @@ fn parse_column(value : Json) -> Column raise FakeError {
   }
   reject_unknown(fields, allowed)
   let provider = match kind {
+    "localized" =>
+      Localized(
+        text_option(fields, "locale", "en_US"),
+        text_option(fields, "method", "name"),
+      )
     "name" => Name
     "address" => Address
     "email" => Email
@@ -154,6 +160,32 @@ pub fn generate_request(request : String) -> String raise FakeError {
     _ => raise Invalid("invalid JSON request")
   }
   let fields = object(input)
+  if fields.contains("schema") {
+    reject_unknown(fields, ["seed", "count", "schema", "tables", "format"])
+    let count = int_option(fields, "count", 10)
+    let format = text_option(fields, "format", "json")
+    if count < 0 || count > 10000 || !["json", "jsonl"].contains(format) {
+      raise Invalid("nested batch count/format")
+    }
+    let session = session_from_fields(fields)
+    let rows = []
+    let mut size = 0
+    for _ in 0..<count {
+      let row = session.next()
+      size += row.stringify().length()
+      if size > 8000000 {
+        raise Invalid("batch output budget")
+      }
+      rows.push(row)
+    }
+    return if format == "json" {
+      rows.to_json().stringify()
+    } else if rows.is_empty() {
+      ""
+    } else {
+      rows.map(r => r.stringify()).join("\n") + "\n"
+    }
+  }
   reject_unknown(fields, ["seed", "count", "columns", "format"])
   let seed : UInt = match fields.get("seed") {
     None => 0U

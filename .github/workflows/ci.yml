@@ -27,6 +27,8 @@ jobs:
       - run: node tools/test-cli.mjs
       - run: node tools/test-records.mjs
       - run: python3 tools/validate-records.py
+      - run: node tools/check-locales.mjs
+      - run: node tools/test-stream.mjs
       - run: node tools/robustness.mjs
       - run: node tools/benchmark.mjs
       - uses: actions/upload-artifact@v4

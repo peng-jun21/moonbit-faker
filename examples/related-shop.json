@@ -1,0 +1,59 @@
+{
+  "format": "jsonl",
+  "datasets": [
+    {
+      "name": "customers",
+      "count": 100,
+      "seed": 7,
+      "schema": {
+        "type": "object",
+        "fields": [
+          {
+            "name": "id",
+            "provider": "sequence",
+            "start": 1,
+            "unique": true
+          },
+          {
+            "name": "name",
+            "provider": "localized",
+            "locale": "zh_CN",
+            "method": "name"
+          }
+        ]
+      }
+    },
+    {
+      "name": "orders",
+      "count": 1000,
+      "seed": 8,
+      "schema": {
+        "type": "object",
+        "fields": [
+          {
+            "name": "id",
+            "provider": "sequence",
+            "start": 1001,
+            "unique": true
+          },
+          {
+            "name": "customer",
+            "type": "foreign",
+            "table": "customers",
+            "path": ""
+          },
+          {
+            "name": "customer_id",
+            "type": "ref",
+            "path": "/customer/id"
+          },
+          {
+            "name": "customer_name",
+            "type": "ref",
+            "path": "/customer/name"
+          }
+        ]
+      }
+    }
+  ]
+}

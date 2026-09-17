@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-17T16:41:46.373Z",
+  "runtime": "v24.11.0",
+  "groups": [
+    "Batch boundaries and checkpoint preserve exact complete sequence",
+    "Related datasets preserve whole-record foreign relationships",
+    "Awaited consumer backpressure and write failure cleanup",
+    "Cancellation stops current delivery and operation timeout recovers",
+    "Row failure emits only committed rows and handles bounded uniqueness",
+    "Independent Python CSV Unicode multiline and nested cell parsing",
+    "Actual CLI pause/resume segments match one uninterrupted output",
+    "Actual CLI no overwrite strict UTF-8 byte budgets and temporary cleanup",
+    "100000-row stream keeps sequence unique across batches without buffering output"
+  ],
+  "passed": 9,
+  "largeStream": {
+    "rows": 100000,
+    "bytes": 5006048,
+    "sha256": "9e6e6894ed0685dd06ea7ff471a2996f8f1d59075822bdab686b54d828d7fe98",
+    "elapsedMs": 1594.3449,
+    "sampledProcessPeakRssBytes": 148643840,
+    "runtime": "v24.11.0",
+    "cpu": "Intel(R) Core(TM) i7-14700HX",
+    "scope": "Worker, JSON, validation and checkpoint; host RSS samples include worker heap; no exact peak or upstream throughput claim"
+  }
+}

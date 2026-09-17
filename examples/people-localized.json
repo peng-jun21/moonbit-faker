@@ -1,0 +1,35 @@
+{
+  "seed": 42,
+  "count": 1000,
+  "format": "jsonl",
+  "columns": [
+    {
+      "name": "id",
+      "provider": "sequence",
+      "start": 1,
+      "unique": true
+    },
+    {
+      "name": "name",
+      "provider": "localized",
+      "locale": "zh_CN",
+      "method": "name"
+    },
+    {
+      "name": "job",
+      "provider": "localized",
+      "locale": "zh_CN",
+      "method": "job"
+    },
+    {
+      "name": "city",
+      "provider": "localized",
+      "locale": "zh_CN",
+      "method": "city"
+    },
+    {
+      "name": "email",
+      "provider": "email"
+    }
+  ]
+}

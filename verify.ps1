@@ -32,6 +32,12 @@ try {
   if ($LASTEXITCODE -ne 0) {throw 'CLI test failed'}
   node tools/test-records.mjs
   if ($LASTEXITCODE -ne 0) {throw 'record generation failed'}
+  python tools/validate-records.py
+  if ($LASTEXITCODE -ne 0) {throw 'independent record validation failed'}
+  node tools/check-locales.mjs
+  if ($LASTEXITCODE -ne 0) {throw 'captured locale reference replay failed'}
+  node tools/test-stream.mjs
+  if ($LASTEXITCODE -ne 0) {throw 'stream/session host checks failed'}
   node tools/robustness.mjs
   if ($LASTEXITCODE -ne 0) {throw 'robustness failed'}
   node tools/benchmark.mjs

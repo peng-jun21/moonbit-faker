@@ -1,0 +1,16 @@
+{
+  "n": 100000,
+  "reference": "Faker 40.39.0 zh_CN surname weights read independently",
+  "uniformChiSquare": 11.6052,
+  "weightedChiSquare": 0.43645,
+  "surnameChiSquare": 11.764395750729928,
+  "lagOneCorrelation": 0.0047301236182598055,
+  "thresholds": {
+    "uniform": 43.83,
+    "weighted": 13.82,
+    "surname": 27.88,
+    "absoluteCorrelation": 0.02
+  },
+  "passed": true,
+  "scope": "One preregistered seed, 100000 rows; broad sanity thresholds, not an RNG quality certification"
+}

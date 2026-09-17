@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-18",
+  "browser": "Codex In-app Browser",
+  "url": "http://127.0.0.1:8798/web/",
+  "groups": [
+    {
+      "name": "Default Chinese and French locale switch",
+      "passed": true,
+      "details": "20 rows and 5 fields; French first name Agathe Guillou."
+    },
+    {
+      "name": "Japanese related orders",
+      "passed": true,
+      "details": "20 rows; all SKU/price values match selected product and tag count 1..3."
+    },
+    {
+      "name": "Invalid JSON and forward reference",
+      "passed": true,
+      "details": "Error status visible; download disabled."
+    },
+    {
+      "name": "Cancel and recover",
+      "passed": true,
+      "details": "Cancelled 1000 rows of 1000-element address arrays; buttons restored and subsequent request succeeded."
+    },
+    {
+      "name": "Actual JSONL and CSV download",
+      "passed": true,
+      "details": "20 rows independently parsed, full nested JSON cell equality; see browser-downloads.json."
+    },
+    {
+      "name": "Zero-row CSV",
+      "passed": true,
+      "details": "Actual 48-byte CSV retains six field names."
+    },
+    {
+      "name": "Preview limit",
+      "passed": true,
+      "details": "100 generated rows, 50 DOM preview rows."
+    },
+    {
+      "name": "Desktop/mobile layout and console",
+      "passed": true,
+      "details": "Desktop screenshot inspected; requested 390x844 viewport gave 375px client/scroll width, table scrolls internally at 660px; no warn/error logs."
+    }
+  ],
+  "scope": "Actual browser actions, not a replayable automation suite; hashes of downloaded files archived separately."
+}

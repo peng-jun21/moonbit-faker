@@ -25,7 +25,8 @@ pub(all) enum Provider {
   WeightedChoice(Array[String], Array[Int])
   Constant(Json)
   Sequence(Int, Int)
-} derive(Debug, Eq)
+  Localized(String, String)
+} derive(Debug, Eq, ToJson)
 
 ///|
 pub(all) struct Column {
@@ -98,6 +99,12 @@ fn sequence_value(start : Int, step : Int, index : Int) -> Int raise FakeError {
 ///|
 fn Provider::validate(self : Provider) -> Unit raise FakeError {
   match self {
+    Localized(locale, provider_name) => {
+      ignore(locale_table(locale, provider_name))
+      if provider_name.has_prefix("postcode_set_") {
+        raise Invalid("internal locale table")
+      }
+    }
     Integer(min, max) => bounds(min, max)
     Decimal(min, max, places) => {
       bounds(min, max)
@@ -151,6 +158,8 @@ fn Generator::provide(
   index : Int,
 ) -> Json raise FakeError {
   match provider {
+    Localized(locale, provider_name) =>
+      Json::string(self.localized(locale, provider_name))
     Name => Json::string(self.name())
     Address => Json::string(self.profile(index).address)
     Email => Json::string(self.email())

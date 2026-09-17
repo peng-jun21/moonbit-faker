@@ -14,9 +14,21 @@ pub fn ean13_from_body(String) -> String raise FakeError
 
 pub fn generate_request(String) -> String raise FakeError
 
+pub fn locale_methods(String) -> Array[String] raise FakeError
+
+pub fn locale_values(String, String) -> Array[String] raise FakeError
+
+pub fn locales() -> Array[String]
+
+pub fn open_session(String) -> Session raise FakeError
+
+pub fn parse_spec(Json) -> Spec raise FakeError
+
 pub fn records(UInt, Array[Column], Int) -> Array[Json] raise FakeError
 
 pub fn render_records(Array[Column], Array[Json], String) -> String raise FakeError
+
+pub fn session_request(String) -> String
 
 // Errors
 pub suberror FakeError {
@@ -50,6 +62,7 @@ pub fn Generator::ipv4(Self) -> String raise FakeError
 pub fn Generator::ipv6(Self) -> String raise FakeError
 pub fn Generator::isbn13(Self) -> String raise FakeError
 pub fn Generator::job(Self) -> String
+pub fn Generator::localized(Self, String, String) -> String raise FakeError
 pub fn Generator::mac_address(Self) -> String raise FakeError
 pub fn Generator::name(Self) -> String
 pub fn Generator::new(UInt) -> Self
@@ -99,7 +112,36 @@ pub(all) enum Provider {
   WeightedChoice(Array[String], Array[Int])
   Constant(Json)
   Sequence(Int, Int)
-} derive(Eq, @debug.Debug)
+  Localized(String, String)
+} derive(Eq, ToJson, @debug.Debug)
+
+pub struct Session {
+  generator : Generator
+  spec : Spec
+  unique_paths : Map[String, Bool]
+  mut seen : Map[String, Map[String, Bool]]
+  mut tables : Map[String, Array[Json]]
+  mut index : Int
+  mut unique_count : Int
+  mut unique_text : Int
+}
+pub fn Session::bind_table(Self, String, Array[Json]) -> Unit raise FakeError
+pub fn Session::checkpoint(Self) -> Json
+pub fn Session::new(UInt, Spec) -> Self raise FakeError
+pub fn Session::next(Self) -> Json raise FakeError
+pub fn Session::position(Self) -> Int
+pub fn Session::restore(Self, Json) -> Unit raise FakeError
+
+pub(all) enum Spec {
+  Value(Provider)
+  Object(Array[(String, Spec)])
+  List(Spec, Int, Int)
+  Nullable(Spec, Int)
+  Unique(Spec)
+  Reference(String)
+  Foreign(String, String)
+  Join(Array[Spec], String)
+} derive(Eq, ToJson, @debug.Debug)
 
 // Type aliases
 

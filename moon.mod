@@ -1,9 +1,9 @@
 name = "localreview/faker"
 
-version = "0.3.0"
+version = "0.4.0"
 
 license = "MIT"
 
 readme = "README.md"
 
-description = "中文 Faker本地候选"
+description = "六地区与结构化测试数据生成"

@@ -23,3 +23,8 @@ pub fn run(input : String) -> String {
 fn main {
 
 }
+
+///|
+pub fn session(input : String) -> String {
+  @lib.session_request(input)
+}

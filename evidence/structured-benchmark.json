@@ -1,0 +1,14 @@
+{
+  "project": "faker",
+  "utc": "2026-09-17T16:39:29.717Z",
+  "runtime": "v24.11.0",
+  "platform": "win32",
+  "cpu": "Intel(R) Core(TM) i7-14700HX",
+  "input_utf8_bytes": 10,
+  "samples": 30,
+  "warmup": 5,
+  "median_ms": 0.1728000000000094,
+  "p95_ms": 0.39629999999999654,
+  "max_ms": 1.3506,
+  "scope": "JS warm execution of documented example; no cross-project or upstream performance claim"
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "Actual IAB downloads: 20 Japanese related orders JSONL and CSV; zero-row CSV header. Parsed with Python stdlib, including nested-cell equality.",
+  "passed": true,
+  "files": {
+    "faker-20.jsonl": {
+      "bytes": 3176,
+      "sha256": "7c001258cbc52a581b275510058c5786180ff508a09e2f3ee1e5effcc8923666"
+    },
+    "faker-20.csv": {
+      "bytes": 2710,
+      "sha256": "bbaae44c1c81544fdec2b29f5a538595182e5c7af3809ae92239913dbf61333d"
+    },
+    "faker-0.csv": {
+      "bytes": 48,
+      "sha256": "719b4c0e90131ce75a583605f5c83b03e67079d67ef10316d590513651dabc69"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "passes": 2,
+  "files": 24,
+  "unchanged": true,
+  "scope": "Official locale exporter, captured-reference golden generator, moon fmt and moon info each regenerated twice; all selected source/API/data/license bytes unchanged."
+}
