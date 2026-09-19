@@ -1,4 +1,4 @@
-name = "localreview/faker"
+name = "peng-jun21/faker"
 
 version = "0.4.0"
 
