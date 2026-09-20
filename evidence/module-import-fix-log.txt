@@ -1,0 +1,50 @@
+$ C:\Users\uiwcv\Documents\Codex\2026-09-10\ban\work\moon\bin\moon.exe info
+Finished. moon: ran 4 tasks, now up to date
+
+$ C:\Users\uiwcv\Documents\Codex\2026-09-10\ban\work\moon\bin\moon.exe check --deny-warn
+Finished. moon: ran 4 tasks, now up to date
+
+$ C:\Users\uiwcv\Documents\Codex\2026-09-10\ban\work\moon\bin\moon.exe build --target js --deny-warn
+Finished. moon: ran 5 tasks, now up to date
+
+$ C:\Users\uiwcv\Documents\Codex\2026-09-10\ban\work\moon\bin\moon.exe run cmd/main
+[
+  {
+    name: "郑文静",
+    email: "sample0@example.test",
+    address: "测试省示例市东城区星河路861号",
+    birth_date: "1991-02-24",
+    id: "sample-0-343334807",
+  },
+  {
+    name: "许清和",
+    email: "sample1@example.test",
+    address: "测试省样本市新区样本大道287号",
+    birth_date: "1971-05-26",
+    id: "sample-1-2729964652",
+  },
+  {
+    name: "赵若云",
+    email: "sample2@example.test",
+    address: "测试省示例市东城区星河路628号",
+    birth_date: "1975-02-12",
+    id: "sample-2-3436932642",
+  },
+  {
+    name: "吴清和",
+    email: "sample3@example.test",
+    address: "测试省示例市西城区青山路860号",
+    birth_date: "2005-06-02",
+    id: "sample-3-3022741740",
+  },
+  {
+    name: "陈思远",
+    email: "sample4@example.test",
+    address: "测试省样本市新区明月街541号",
+    birth_date: "1994-05-27",
+    id: "sample-4-1296938617",
+  },
+]
+
+$ node tools/test-demo.mjs
+faker: independent browser engine passed

@@ -1,5 +1,7 @@
 # Faker 测试数据工坊
 
+> 2026-09-21 本地构建修复：命令包 import 已同步到当前 moon.mod 模块名；moon info/check、JS 构建、MoonBit 示例和 Node 引擎示例通过。算法未改，本轮未重跑历史全部行为/性能套件。当前提交指纹见 evidence/module-import-fix.json。
+
 MoonBit 本地候选版 **0.4.0**。可复现的六地区姓名/地址等数据、嵌套对象和数组、行内引用、跨表关联、持续唯一性，以及带背压与检查点的 JSONL/CSV 流式生成。保留原有 profile 和 25 类标量 provider 的种子结果。
 
 ## 运行
