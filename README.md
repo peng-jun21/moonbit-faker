@@ -1,5 +1,13 @@
 # Faker 测试数据工坊
 
+## 获取与验证入口
+
+公开源码：[github.com/peng-jun21/moonbit-faker](https://github.com/peng-jun21/moonbit-faker)；MoonBit 模块名为 `peng-jun21/faker`。
+
+从源码运行：`git clone https://github.com/peng-jun21/moonbit-faker.git` 后进入该目录，按下文和 [TESTING.md](TESTING.md) 安装所需工具。仓库公开不等于已在 Mooncakes 发布，不承诺 `moon add` 当前可用。
+
+查看 [GitHub Actions](https://github.com/peng-jun21/moonbit-faker/actions) 时请核对 run 的 commit SHA；历史 evidence、旧 ZIP 与本地测试不能替代当前提交的 CI 结果。下文保留各版本的验证范围和兼容性限制。
+
 MoonBit 本地候选版 **0.4.0**。可复现的六地区姓名/地址等数据、嵌套对象和数组、行内引用、跨表关联、持续唯一性，以及带背压与检查点的 JSONL/CSV 流式生成。保留原有 profile 和 25 类标量 provider 的种子结果。
 
 ## 运行
@@ -65,4 +73,4 @@ UUID/EAN/ISBN 等是格式测试样本，无生产随机源、实际注册分配
 
 安装 MoonBit、Python 和 Node.js 后运行 `./verify.ps1`，也可传 `-MoonPath C:/path/to/moon/bin/moon.exe`。日常验证只用仓库内已捕获的官方输出，不需下载 Faker；重新执行官方对照需按 TESTING.md 建立外部参考目录。
 
-全部仅本地，独立 Git/构建目录、无 remote；未上传、发布或提交比赛。旧 ZIP/bundle 为历史快照，本轮未重打包。
+> 历史开发记录（以下发布/归档状态不代表当前仓库；当前入口见文首）：全部仅本地，独立 Git/构建目录、无 remote；未上传、发布或提交比赛。旧 ZIP/bundle 为历史快照，本轮未重打包。
