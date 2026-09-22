@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-17T16:41:46.373Z",
+  "date": "2026-09-22T13:14:46.365Z",
   "runtime": "v24.11.0",
   "groups": [
     "Batch boundaries and checkpoint preserve exact complete sequence",
@@ -17,8 +17,8 @@
     "rows": 100000,
     "bytes": 5006048,
     "sha256": "9e6e6894ed0685dd06ea7ff471a2996f8f1d59075822bdab686b54d828d7fe98",
-    "elapsedMs": 1594.3449,
-    "sampledProcessPeakRssBytes": 148643840,
+    "elapsedMs": 3895.7649,
+    "sampledProcessPeakRssBytes": 152162304,
     "runtime": "v24.11.0",
     "cpu": "Intel(R) Core(TM) i7-14700HX",
     "scope": "Worker, JSON, validation and checkpoint; host RSS samples include worker heap; no exact peak or upstream throughput claim"

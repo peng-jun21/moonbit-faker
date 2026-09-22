@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-22",
+  "project": "faker",
+  "package": "peng-jun21/faker",
+  "version": "0.4.0",
+  "code_base_commit_before_materials": "313a5016c29c903fe6c6a0450dcf9f7e05642d90",
+  "core_checks": [
+    {
+      "command": [
+        "moon",
+        "test",
+        "--target",
+        "js"
+      ],
+      "exit": 0,
+      "seconds": 2.47,
+      "log": "faker-test---target-js.log"
+    },
+    {
+      "command": [
+        "moon",
+        "test",
+        "--target",
+        "wasm-gc"
+      ],
+      "exit": 0,
+      "seconds": 2.16,
+      "log": "faker-test---target-wasm-gc.log"
+    },
+    {
+      "command": [
+        "moon",
+        "build",
+        "--target",
+        "js"
+      ],
+      "exit": 0,
+      "seconds": 1.5,
+      "log": "faker-build---target-js.log"
+    }
+  ],
+  "workflow_checks": [
+    {
+      "command": [
+        "node",
+        "tools/test-stream.mjs"
+      ],
+      "exit": 0,
+      "seconds": 11.89,
+      "log": "faker-workflow-0.log"
+    }
+  ],
+  "interpretation": "本轮真实流式、关联表、检查点续跑和十万行任务测试通过；examples/related-shop.json 是合成业务样例，不能称为客户数据。",
+  "limit": "合成数据不是脱敏后的真实数据，不具备密码学随机性或跨进程全局唯一性保证；唯一值重试有上限。",
+  "remote_push_performed": false
+}

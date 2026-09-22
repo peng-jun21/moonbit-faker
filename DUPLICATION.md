@@ -1,7 +1,17 @@
-# 查重范围与结论
+# faker 查重与定位 · 2026-09-22
 
-2026-09-10 对关键词 `faker` 查询 Mooncakes 官方包索引及 GitHub `faker language:MoonBit`；后者返回 0 个仓库。注册表命中 mizchi/flaker，但描述是 computation engine；未将字符串相近的名字直接认定为 Faker 实现。
+本轮未找到同范围 MoonBit 数据生成库。价值在关联 schema、可保存状态和可复現数据工作流，不是发明随机数或姓名数据；词库及 Faker 来源版本必须披露。 检索原始响应在总交付包的创新性复核目录保存。
 
-在此公开检索范围内未发现同范围直接实现。**这不是全网无重复证明**，未覆盖全代码搜索、私有仓库、别名及完整比赛报名表。原始 URL 与返回摘要见 [证据](evidence/duplication.json)。
 
-规格参考：[https://faker.readthedocs.io/en/master/locales/zh_CN.html](https://faker.readthedocs.io/en/master/locales/zh_CN.html)。
+
+本轮材料采用定位：**可复现关联测试数据与断点生成工具**。
+
+MoonBit 与宿主分工：MoonBit 实现种子源、provider、schema、行内/外表引用与会话状态；Node 负责流式文件、背压和检查点 I/O。
+
+本轮证据：本轮真实流式、关联表、检查点续跑和十万行任务测试通过；examples/related-shop.json 是合成业务样例，不能称为客户数据。 具体输入、脚本、已执行与历史对照分开记录在 [PROPOSAL.md](PROPOSAL.md) 和 evidence/innovation-review-20260922/。
+
+边界：合成数据不是脱敏后的真实数据，不具备密码学随机性或跨进程全局唯一性保证；唯一值重试有上限。
+
+检索覆盖 Mooncakes 官方关键词/别名、GitHub 仓库查询、GitLink 公开索引、直接来源文档；没有完整赛事报名表、私有仓库、未公开分支或 GitHub 全代码索引。GitLink 索引也不完整。未找到同范围项目不等于生态空白；已有相关项目不自动等于无独立贡献。完整查询和固定提交快照在总交付目录 innovation-review-20260922/。
+
+初次复核风险为“待补场景”。本次补足差异和可复现工作流，没有自行将重叠归零，也不替评委作创新性认定。最终公开代码与表单附件须使用一致版本。
