@@ -1,0 +1,17 @@
+{
+  "project": "faker",
+  "title": "可复现关联测试数据与断点生成工具",
+  "module": "peng-jun21/faker",
+  "version": "0.4.0",
+  "repository": "https://github.com/peng-jun21/moonbit-faker",
+  "status": "保留候选",
+  "remainingRisk": "没有客户数据或脱敏承诺；断点仅支持文档声明的单数据集路径。",
+  "actualUsersClaimed": false,
+  "anonymousCloneVerified": true,
+  "publicHead": "fcb34dbe41602a281529e64771f177f23891537c",
+  "defaultBranch": "origin/main",
+  "localChangesPublished": false,
+  "proposalLines": 25,
+  "useCase": "关联客户和订单数据集",
+  "diff": "本轮未找到同范围 MoonBit 数据生成库。价值在关联 schema、可保存状态和可复現数据工作流，不是发明随机数或姓名数据；词库及 Faker 来源版本必须披露。"
+}

@@ -1,0 +1,16 @@
+{
+  "title": "关联客户和订单数据集",
+  "scope": "原创合成 schema，词库来源仍为 Faker；不称真实数据脱敏。",
+  "steps": [
+    {
+      "args": [
+        "tools/stream.mjs",
+        "--job",
+        "examples/related-shop.json",
+        "--out",
+        "{out}/shop.jsonl"
+      ]
+    }
+  ],
+  "expected": "新文件包含 100 个 customers 与 1000 个 orders；客户引用来自先生成的数据集。"
+}
